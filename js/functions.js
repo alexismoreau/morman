@@ -6,7 +6,7 @@ $(function(){
   $('.modal-trigger').leanModal();
   $(function () {
     var count = 0;
-    var wordsArray = ["Pratique", "Innovante", "Simple", "Fonctionelle"];
+    var wordsArray = ["Personnalisable", "Innovante", "Simple", "Fonctionelle"];
     setInterval(function () {
       count++;
       $("#changeText").fadeOut(400, function () {
