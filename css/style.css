@@ -904,7 +904,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   position: relative;
 }
 .contact.profile-user {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 20px;
   right: 0;
