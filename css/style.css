@@ -527,6 +527,11 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   background-color: transparent;
   border: none;
 }
+
+#main > div.snap-drawers > div > div > ul > li.have-child > ul > li > div.collapsible-body > ul > li > div:nth-child(4) {
+  line-height: 140%;
+}
+
 .snap-drawer .collapsible-body {
   border-bottom: none;
 }
