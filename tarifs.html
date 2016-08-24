@@ -2,7 +2,7 @@
 <html lang="fr-FR">
   <head>
     <title>
-      Morman
+      Morman Design
     </title>
     <meta http-equiv="content-type" content="charset=utf-8">
     <meta content="IE=edge" http-equiv="x-ua-compatible">
@@ -16,41 +16,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="m-scene" id="main"> <!-- Page Container -->
 
-      <!-- Modal -->
-      <div class="modal contacts-information" id="modal3">
-        <div class="modal-content">
-          <h4>
-            Contactez-Nous
-          </h4>
-          <form class="col s12">
-            <div class="input-field col s12">
-              <i class="mdi mdi-account-circle prefix"></i> 
-              <input class="validate" id="first_name" type="text"> 
-              <label for="first_name">Nom</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-phone prefix"></i> 
-              <input class="validate" id="icon_telephone" type="number"> 
-              <label for="icon_telephone">Téléphone</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-email prefix"></i> 
-              <input class="validate" id="email" type="email"> 
-              <label for="email">E-mail</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-pencil prefix"></i> 
-              <textarea class="materialize-textarea" id="textarea1"></textarea> 
-              <label for="textarea1">Ecrivez votre message ici</label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a class=" modal-action modal-close waves-effect waves-green btn-flat" href="#!">Envoyer</a>
-        </div>
-      </div> <!-- End of Modal -->
+    <div class="m-scene" id="main"> <!-- Page Container -->
 
       <!-- Sidebars -->
       <div class="snap-drawers">
@@ -109,17 +76,114 @@
           <div class="open-left" id="open-left">
             <i class="mdi mdi-sort-variant"></i>
           </div>
-          <span class="title">Contact</span>
+          <span class="title">Tarifs</span>
         </div>
-        
-        <!-- Main Content -->
-        <div class="scene_element contacts scene_element--fadeinup" style="position:relative;">
 
-          <div class="contacts-button">
-            <a class="waves-effect waves-light btn-large modal-trigger primary-color" href="#modal3"><i class="mdi mdi-email left"></i>Contactez Nous</a>
+        <div class="scene_element scene_element--fadeinup">
+          
+          <!-- Profile HEader -->
+          <div class="profile-header">
+            <img alt="" src="img/13.jpg">
+            <div class="overlay-gradient">
+            </div>
+            <div class="contact profile-user">
+              <img alt="" src="img/user8.jpg">
+              <h4 class="white-text">
+                Alexis
+              </h4>
+              <p class="white-text">
+                Co-Fondateur & Developpeur
+              </p>
+              <a class="waves-effect waves-light btn-flat primary-color white-text" href="#">Suivre</a>
+            </div>
           </div>
 
-          <iframe height="120%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10511.568595245732!2d2.364911!3d48.803037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d584c7aeb1b82!2sMorman+Design!5e0!3m2!1sfr!2sfr!4v1472066833588" style="position:absolute;top:0;border:none;" width="100%"></iframe>
+        <div class="container">
+            <div class="social-counter">
+              <i class="mdi mdi-twitter"></i><br>
+              350<br>
+              <span>Follower</span>
+            </div>
+
+            <div class="social-counter last">
+              <i class="mdi mdi-facebook"></i><br>
+              1200<br>
+              <span>Like</span>
+            </div>
+
+            <div class="social-counter last">
+              <i class="mdi mdi-pinterest"></i><br>
+              643<br>
+              <span>Pin</span>
+            </div>
+            
+            <div class="profile-description">
+              <h4 class="paragraph-title">
+                Présentation
+              </h4>
+
+              <p>
+                Présentation de Alexis
+              </p>
+            </div>
+        </div>
+              <!-- Profile HEader -->
+          <div class="profile-header">
+            <img alt="" src="img/13.jpg">
+            <div class="overlay-gradient">
+            </div>
+            <div class="contact profile-user">
+              <img alt="" src="img/user8.jpg">
+              <h4 class="white-text">
+                Thibault
+              </h4>
+              <p class="white-text">
+                Co-Fondateur & Developpeur
+              </p>
+              <a class="waves-effect waves-light btn-flat primary-color white-text" href="#">Suivre</a>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="social-counter">
+              <i class="mdi mdi-twitter"></i><br>
+              350<br>
+              <span>Follower</span>
+            </div>
+
+            <div class="social-counter last">
+              <i class="mdi mdi-facebook"></i><br>
+              1200<br>
+              <span>Like</span>
+            </div>
+
+            <div class="social-counter last">
+              <i class="mdi mdi-pinterest"></i><br>
+              643<br>
+              <span>Pin</span>
+            </div>
+              
+            <div class="profile-description">
+              <h4 class="paragraph-title">
+                A Propos
+              </h4>
+
+              <p>
+                Présentation de Thibault
+              </p>
+            </div>
+
+          </div>
+          
+          <!-- Footer -->
+          <div class="scene_element scene_element--fadeinup footer-copyright primary-color">
+            <div class="container">
+              <i class="mdi mdi-facebook"></i> 
+              <i class="mdi mdi-twitter"></i> 
+              <i class="mdi mdi-google-plus"></i> 
+              <i class="mdi mdi-pinterest"></i>
+            </div>
+          </div>
 
         </div> <!-- End of Main Contents -->
         <div id="blockui"></div>
@@ -127,6 +191,13 @@
     </div> <!-- End of Page Container -->
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    <script>
+      $(function() {
+        var div = $('.box');
+        var width = div.width();
+        div.css('height', width);
+      });
+    </script> 
     <script src="js/materialize.min.js"></script> 
     <script src="js/snap.js"></script> 
     <script src="js/jquery.smoothState.min.js"></script> 
