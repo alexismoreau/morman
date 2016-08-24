@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>
+      Morman
+    </title>
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="m-scene" id="main"> <!-- Page Container -->
+
+      <!-- Modal -->
+      <div class="modal contacts-information" id="modal3">
+        <div class="modal-content">
+          <h4>
+            Contactez-Nous
+          </h4>
+          <form class="col s12">
+            <div class="input-field col s12">
+              <i class="mdi mdi-account-circle prefix"></i> 
+              <input class="validate" id="first_name" type="text"> 
+              <label for="first_name">Nom</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi mdi-phone prefix"></i> 
+              <input class="validate" id="icon_telephone" type="number"> 
+              <label for="icon_telephone">Téléphone</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi mdi-email prefix"></i> 
+              <input class="validate" id="email" type="email"> 
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi mdi-pencil prefix"></i> 
+              <textarea class="materialize-textarea" id="textarea1"></textarea> 
+              <label for="textarea1">Ecrivez votre message ici</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class=" modal-action modal-close waves-effect waves-green btn-flat" href="#!">Envoyer</a>
+        </div>
+      </div> <!-- End of Modal -->
+
+      <!-- Sidebars -->
+      <div class="snap-drawers">
+
+        <!-- Left Sidebar -->
+        <div class="snap-drawer snap-drawer-left">
+          <div class="drawer-inner">
+            <ul>
+              <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
+              <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+              <li><a href="pourquoi-nous.html"><i class="mdi mdi-file-image-box"></i> <span>Pourquoi Nous ?</span></a></li>
+                <li class="have-child">
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="mdi mdi-pine-tree"></i> Nos Prestations <i class="mdi mdi-menu-down right"></i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-1-box-outline"></i> First
+                          </div>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-2-box-outline"></i> Second
+                          </div>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-3-box-outline"></i> Third
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="news.html"><i class="mdi mdi-rss"></i> <span>Tarifs</span></a></li>
+              <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
+            </ul>
+
+            </div>
+        </div> <!-- End of Left Sidebar -->
+
+    </div> <!-- End of Sidebars -->
+      <!-- Page Content -->
+      <div class="snap-content z-depth-5" id="content">
+
+        <!-- Toolbar -->
+        <div id="toolbar">
+          <div class="open-left" id="open-left">
+            <i class="mdi mdi-sort-variant"></i>
+          </div>
+          <span class="title">Contact</span>
+          <div class="open-right" id="open-right">
+            <i class="mdi mdi-dots-vertical"></i>
+          </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="scene_element contacts scene_element--fadeinup" style="position:relative;">
+
+          <div class="contacts-button">
+            <a class="waves-effect waves-light btn-large modal-trigger primary-color" href="#modal3"><i class="mdi mdi-email left"></i>Contact Us</a>
+          </div>
+
+          <iframe height="120%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10511.568595245732!2d2.364911!3d48.803037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d584c7aeb1b82!2sMorman+Design!5e0!3m2!1sfr!2sfr!4v1472066833588" style="position:absolute;top:0;border:none;" width="100%"></iframe>
+
+        </div> <!-- End of Main Contents -->
+        <div id="blockui"></div>
+      </div> <!-- End of Page Content -->
+    </div> <!-- End of Page Container -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    <script src="js/materialize.min.js"></script> 
+    <script src="js/snap.js"></script> 
+    <script src="js/jquery.smoothState.min.js"></script> 
+    <script src="js/sidebar.js"></script> 
+    <script src="js/functions.js"></script>
+  </body>
+</html>
