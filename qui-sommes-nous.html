@@ -2,7 +2,7 @@
 <html lang="fr-FR">
   <head>
     <title>
-      Morman
+      Morman Design
     </title>
     <meta http-equiv="content-type" content="charset=utf-8">
     <meta content="IE=edge" http-equiv="x-ua-compatible">
@@ -16,6 +16,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+
     <div class="m-scene" id="main"> <!-- Page Container -->
 
       <!-- Sidebars -->
@@ -26,11 +27,34 @@
           <div class="drawer-inner">
             <ul>
               <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
-              <li><a href="profile.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-nous ?</span></a></li>
-              <li><a href="portfolio.html"><i class="mdi mdi-file-image-box"></i> <span>Pourquoi nous ?</span></a></li>
-              <li><a href="blog.html"><i class="mdi mdi-book-multiple-variant"></i> <span>Nos Prestations</span></a></li>
+              <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+              <li><a href="pourquoi-nous.html"><i class="mdi mdi-file-image-box"></i> <span>Pourquoi Nous ?</span></a></li>
+                <li class="have-child">
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="mdi mdi-pine-tree"></i> Nos Prestations <i class="mdi mdi-menu-down right"></i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-1-box-outline"></i> First
+                          </div>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-2-box-outline"></i> Second
+                          </div>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-3-box-outline"></i> Third
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
               <li><a href="news.html"><i class="mdi mdi-rss"></i> <span>Tarifs</span></a></li>
-              <li><a href="contacts.html"><i class="mdi mdi-map-marker"></i> <span>Nos clients</span></a></li>
+              <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
             </ul>
 
             </div>
@@ -38,7 +62,7 @@
 
     </div> <!-- End of Sidebars -->
 
-        <!-- Page Content -->
+      <!-- Page Content -->
       <div class="snap-content z-depth-5" id="content">
 
         <!-- Toolbar -->
@@ -46,7 +70,7 @@
           <div class="open-left" id="open-left">
             <i class="mdi mdi-sort-variant"></i>
           </div>
-          <span class="title">Morman Design</span>
+          <span class="title">Qui Sommes-Nous ?</span>
           <div class="open-right" id="open-right">
             <i class="mdi mdi-dots-vertical"></i>
           </div>
@@ -88,6 +112,16 @@
               <i class="mdi mdi-pinterest"></i><br>
               643<br>
               <span>Pin</span>
+            </div>
+            
+            <div class="profile-description">
+              <h4 class="paragraph-title">
+                Présentation
+              </h4>
+
+              <p>
+                Présentation de Alexis
+              </p>
             </div>
         </div>
               <!-- Profile HEader -->
@@ -132,106 +166,10 @@
               </h4>
 
               <p>
-                A collection of textile samples lay spread out on the table Samsa was a travelling salesman and above it there hung a picture that he had recently cut out.
+                Présentation de Thibault
               </p>
             </div>
 
-            <div class="profile-description">
-              <h4 class="paragraph-title">
-                Historique de l'Entreprise
-              </h4>
-              <div class="timeline">
-                <div class="row">
-                  <div class="col s12">
-                    <div class="contact">
-                      <img alt="" src="img/user7.jpg">
-                      <div class="dot border-coral">
-                      </div>
-                      <p>
-                        Julie Davis <i class="mdi mdi-attachment"></i>
-                      </p>
-                      <span>Sent you some photos.</span>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">6 - 7 pm</span>
-                      <div class="dot border-sea">
-                      </div>
-                      <p>
-                        Thomas Smith
-                      </p>
-                      <span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</span>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">4 - 5 pm</span>
-                      <div class="dot border-orange">
-                      </div>
-                      <p>
-                        37 New friends
-                      </p>
-                      <div class="friends">
-                        <img alt="" class="circle" src="img/user4.jpg"> 
-                        <img alt="" class="circle" src="img/user3.jpg"> 
-                        <img alt="" class="circle" src="img/user5.jpg"> 
-                      </div>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">1 - 2 pm</span>
-                      <div class="dot border-green">
-                      </div>
-                      <p>
-                        Jake Soul
-                      </p>
-                      <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</span>
-                    </div>
-
-                    <div class="contact">
-                      <img alt="" src="img/user6.jpg">
-                      <div class="dot border-coral">
-                      </div>
-                      <p>
-                        Robert Green
-                      </p>
-                      <span>7 New notifications</span>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">4 - 8 am</span>
-                      <div class="dot border-sea">
-                      </div>
-                      <p>
-                        Camilla Oller
-                      </p>
-                      <span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</span>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">2 - 3 am</span>
-                      <div class="dot border-green">
-                      </div>
-                      <p>
-                        Added 3 new photos.
-                      </p>
-                      <div class="friends">
-                        <img alt="" class="circle" src="img/user7.jpg"> <img alt="" class="circle" src="img/user8.jpg"> <img alt="" class="circle" src="img/user6.jpg">
-                      </div>
-                    </div>
-
-                    <div class="contact">
-                      <span class="date">1 - 2 pm</span>
-                      <div class="dot border-coral">
-                      </div>
-                      <p>
-                        Mike Lee <i class="mdi mdi-attachment"></i>
-                      </p>
-                      <span>Sent you an attachment.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           
           <!-- Footer -->
