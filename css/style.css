@@ -422,7 +422,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 .input-field .prefix ~ input,.input-field .prefix ~ textarea {
   margin-left: 29px;
-  color: #fff;
 }
 
 /* footer */

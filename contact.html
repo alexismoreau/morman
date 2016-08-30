@@ -9,7 +9,7 @@
     <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>      
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
     <link href="css/keyframes.css" rel="stylesheet" type="text/css">
     <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
@@ -20,38 +20,38 @@
 
       <!-- Modal -->
       <div class="modal contacts-information" id="modal3">
-        <div class="modal-content">
-          <h4>
-            Contactez-Nous
-          </h4>
-          <form class="col s12">
-            <div class="input-field col s12">
-              <i class="mdi mdi-account-circle prefix"></i> 
-              <input class="validate" id="first_name" type="text"> 
-              <label for="first_name">Nom</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-phone prefix"></i> 
-              <input class="validate" id="icon_telephone" type="number"> 
-              <label for="icon_telephone">Téléphone</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-email prefix"></i> 
-              <input class="validate" id="email" type="email"> 
-              <label for="email">E-mail</label>
-            </div>
-            <div class="input-field col s12">
-              <i class="mdi mdi-pencil prefix"></i> 
-              <textarea class="materialize-textarea" id="textarea1"></textarea> 
-              <label for="textarea1">Ecrivez votre message ici</label>
-            </div>
-          </form>
+          <div class="modal-content">
+              <h4>
+                Contactez-Nous
+              </h4>
+              <form id="monForm" action="email.php" method="post">
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-account-circle prefix"></i> 
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-phone prefix"></i> 
+                        <label for="telephone">Téléphone</label>
+                        <input type="number" id="telephone" name="telephone" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-email prefix"></i> 
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-pencil prefix"></i> 
+                        <label for="message">Ecrivez votre message ici</label>
+                        <input type="text" id="message" name="message" />
+                    </div>
+                    <div class="modal-footer">
+                        <input class= "modal-action modal-close waves-effect waves-green btn-flat" type="submit" id="envoyer" value="Envoyer" />
+                    </div>
+              </form>
+          </div> <!-- End of Modal -->
         </div>
-        <div class="modal-footer">
-          <a class=" modal-action modal-close waves-effect waves-green btn-flat" href="#!">Envoyer</a>
-        </div>
-      </div> <!-- End of Modal -->
-
+        
       <!-- Sidebars -->
       <div class="snap-drawers">
 
@@ -94,7 +94,8 @@
                 </ul>
               </li>
               <li><a href="tarifs.html"><i class="mdi mdi-rss"></i> <span>Tarifs</span></a></li>
-              <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
+              <li><a href="nos-clients.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
+              <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nous contacter</span></a></li>
             </ul>
 
             </div>
@@ -125,12 +126,13 @@
         <div id="blockui"></div>
       </div> <!-- End of Page Content -->
     </div> <!-- End of Page Container -->
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+      
+    <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/materialize.min.js"></script> 
     <script src="js/snap.js"></script> 
     <script src="js/jquery.smoothState.min.js"></script> 
     <script src="js/sidebar.js"></script> 
     <script src="js/functions.js"></script>
+    <script src="js/contactForm.js"></script>
   </body>
 </html>
