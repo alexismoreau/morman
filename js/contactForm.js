@@ -23,6 +23,11 @@ $(document).ready(function() {
                     data: $this.serialize(), // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
                     success: function(html) { // Je récupère la réponse du fichier PHP
                         alert(html); // J'affiche cette réponse
+                        setTimeout(
+                          function() 
+                          {
+                             location.reload();
+                          }, 001);
                     }
                 });
             }
