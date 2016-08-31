@@ -368,6 +368,17 @@ span.badge {
   border-radius: 50%;
 }
 
+#envoyer {
+  padding: 5px 15px;
+  background: #20B2AA;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-style: normal;
+}
+
 /*  input */
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
