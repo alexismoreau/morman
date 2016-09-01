@@ -1064,7 +1064,9 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .friends i {
   font-size: 32px;
 }
-
+.timeline .link {
+  color: #039be5;
+}
 /* ToDo */
 .todo input[type="checkbox"]:checked + label {
   text-decoration: line-through;
