@@ -664,6 +664,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .snap-drawer .collapsible > li.active li.active {
   background-color: transparent;
 }
+.snap-drawers .collapsible-body > ul > li > div > a {
+  color: inherit;
+  line-height: initial;
+}
 
 /*------------------------------------------------------------------
 7. Pages
@@ -1075,6 +1079,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 .profile-user1 > a, .profile-user2 > a {
   left: 3em;
+}
+.contact.profile-user2 > a > img, .contact.profile-user1 > a > img {
+  left: 7em;
+  top: 140px;
+  width: auto;
+  height: 40px;
+  border-radius: initial;
 }
 /* ToDo */
 .todo input[type="checkbox"]:checked + label {
