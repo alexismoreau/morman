@@ -923,12 +923,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 .contact.profile-user1 {
   position: absolute;
-  bottom: 40px;
+  bottom: 25%;
   left: 15%;
 }
 .contact.profile-user2 {
   position: absolute;
-  bottom: 40px;
+  bottom: 25%;
   right: 15%;
 }
 .profile-user h4 {
@@ -1073,6 +1073,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   width: 90px;
   height: auto;
   border-radius: initial;
+  opacity: 0.5;
 }
 .profile-user1 > p:nth-child(3), .profile-user2 > p:nth-child(3), .profile-user1 > p:nth-child(5), .profile-user2 > p:nth-child(5) {
   padding-left: 3em;

@@ -14,14 +14,19 @@
     <link href="css/keyframes.css" rel="stylesheet" type="text/css">
     <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/snap.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/functions.js"></script>
   </head>
   <body>
 
     <div class="m-scene" id="main"> <!-- Page Container -->
 
       <!-- Sidebars -->
-      <div class="snap-drawers">
-
+    <div class="snap-drawers">
         <!-- Left Sidebar -->
         <div class="snap-drawer snap-drawer-left">
           <div class="drawer-inner">
@@ -39,19 +44,19 @@
                       <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-1-box-outline"> </i> MyHairManager
+                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="nos-prestations.html#MyHairManager"> MyHairManager</a>
                           </div>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-2-box-outline"></i> Site Vitrine
+                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="nos-prestations.html#site_vitrine"> Site Vitrine</a>
                           </div>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-3-box-outline"></i> Site e-Commerce
+                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="nos-prestations.html#site_e-commerce"> Site e-Commerce</a>
                           </div>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-4-box-outline"></i> Plateforme de Prise de Rendez-vous
+                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="nos-prestations.html#plateforme_prise_de_rdv"> Plateforme de Prise de Rendez-vous</a>
                           </div>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-5-box-outline"></i> Devis sur Mesure
+                              <i class="mdi mdi-numeric-5-box-outline"></i><a href="nos-prestations.html#devis_sur_mesure"> Devis sur Mesure</a>
                           </div>
                         </li>
                       </ul>
@@ -68,6 +73,7 @@
         </div> <!-- End of Left Sidebar -->
 
     </div> <!-- End of Sidebars -->
+        
       <!-- Page Content -->
       <div class="snap-content z-depth-5" id="content">
 
@@ -209,11 +215,18 @@
 
             <div class="container">    
                 <div class="profile-description">
-                  <h4 class="paragraph-title">
-                    Présentation
-                  </h4>
-                  <p>
-                    Notre Présentation
+                  <h3 class="paragraph-title">
+                    L’entente de deux ingénieurs..
+                  </h3>
+                  <p>     
+                        
+Dans la même école depuis le début de notre formation, nous avons débuté le cycle ingénieur avec les mêmes objectifs. <br> 
+Nous avons effectué notre semestre à l’international en Corée de Sud en choisissant sans attendre un cursus orienté informatique. <br>
+Nous avons ainsi remarqué notre cohésion complémentaire lors des projets de programmation et nous avons progressé tout en nous diversifiant. <br>
+Nous sommes rentrés en France avec l’envie d’aller plus loin dans ce domaine alors nous avons choisi la filière Informatique pour notre première année de Master. <br>
+Les projets scolaires se sont succédés et nous avons décidé de commencer cette aventure afin de satisfaire les besoins des commerçants en matière d’interface de gestion et de communication. <br>
+Désormais nous sommes en deuxième année de Master orienté intelligence numérique et data dans le but d’optimiser les outils numériques de gestion de données.
+
                   </p>
                 </div>
             </div>
@@ -223,12 +236,6 @@
             
       </div> <!-- End of Page Content -->
     </div> <!-- End of Page Container -->
-
-    <script src="js/jquery-3.1.0.min.js"></script> 
-    <script src="js/materialize.min.js"></script> 
-    <script src="js/snap.js"></script> 
-    <script src="js/jquery.smoothState.min.js"></script> 
-    <script src="js/sidebar.js"></script> 
-    <script src="js/functions.js"></script>
+        
   </body>
 </html>
