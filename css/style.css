@@ -177,8 +177,12 @@ a {
   opacity: .7;
 }
 .paragraph-title {
+  font-size: 30px;
+}
+.container > div > p {
   color: #9e9e9e;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 300;    
 }
 
 /*------------------------------------------------------------------
@@ -187,7 +191,7 @@ a {
 img {
   width: 100%;
   display: block;
-  height: 15em;
+  height: 12em;
 }
 .snap-content {
   position: relative;
@@ -333,7 +337,7 @@ span.badge {
 /* Contact */
 .contact {
   position: relative;
-  padding: 16px 16px 16px 65px;
+  padding: 10px 16px 10px 65px;
 }
 .contact img {
   position: absolute;
@@ -345,9 +349,10 @@ span.badge {
 }
 .contact p {
   margin: 1px 0 0;
+  font-size: 22px;
 }
 .contact span {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
 }
 .contact i {
@@ -921,15 +926,16 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 /* Profile */
 .profile-header {
   position: relative;
+  font-size: 22px;
 }
 .contact.profile-user1 {
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
   left: 15%;
 }
 .contact.profile-user2 {
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
   right: 15%;
 }
 .profile-user h4 {
@@ -1035,9 +1041,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   border-left: 2px solid #eee;
   margin-left: 20px;
 }
-.timeline .contact {
-  margin-bottom: 20px;
-}
 .timeline .dot {
   width: 20px;
   height: 20px;
@@ -1080,8 +1083,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   left: 3em;
 }
 .contact.profile-user2 > a > img, .contact.profile-user1 > a > img {
-  left: 7em;
-  top: 140px;
+  left: 6em;
+  top: 7em;
   width: auto;
   height: 40px;
   border-radius: initial;
