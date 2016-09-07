@@ -1999,7 +1999,7 @@ ul.bxslider {
   margin:10px auto;
   width:100%;
   min-width:400px;
-  max-width:700px;
+  max-width:1000px;
   color: white;
 }
 #tarifs_index table{
@@ -2044,3 +2044,9 @@ ul.bxslider {
         padding:2px;
     }
 }
+
+#tarifs_index table > thead > tr > th, #tarifs_index table > tbody > tr > td {
+    text-align: center;
+    vertical-align: middle;
+}
+    
