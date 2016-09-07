@@ -181,10 +181,20 @@ a {
 }
 .container > div > p {
   color: #9e9e9e;
-  font-size: 17px;
-  font-weight: 300;    
+  font-size: 18px;    
 }
-
+.accroche {
+  color: black;
+  font-size: 18px;
+}
+.liste-fonctions {
+  display: inline-block;
+  list-style-type: disc;
+}
+.liste-fonctions > li {
+  text-align: left;
+  line-height: 35px;
+}
 /*------------------------------------------------------------------
 4. Base Elements
 -------------------------------------------------------------------*/
@@ -1282,10 +1292,7 @@ html {
 }
 
 .title-box p {
-    color: #858890;
-    font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
+    font-size: 16px;
     margin: 0 60px 24px;
     line-height: 33px;
 }
