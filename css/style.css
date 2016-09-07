@@ -1014,7 +1014,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .splash {
   width: 100%;
   min-height: calc(100vh - 56px);
-  max-height: calc(100vh - 56px);
   overflow: hidden;
 }
 

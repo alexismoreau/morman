@@ -16,111 +16,99 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/snap.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        count = 0;
-        wordsArray = ["Personnalisable", "Innovante", "Simple", "Fonctionelle"];
-        setInterval(function () {
-          count++;
-          $("#changeText").fadeOut(400, function () {
-            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
-          });
-        }, 3000);
-      });
-    </script> 
+    <script src="js/snap.js"></script> 
     <script src="js/jquery.smoothState.min.js"></script> 
     <script src="js/sidebar.js"></script> 
     <script src="js/functions.js"></script>
   </head>
+  
   <body>
+      <div class="m-scene" id="main"> <!-- Page Container -->
 
-    <div class="m-scene" id="main"> <!-- Page Container -->
+            <!-- Sidebars -->
+            <div class="snap-drawers">
 
-      <!-- Sidebars -->
-    <div class="snap-drawers">
+                    <!-- Left Sidebar -->
+                    <div class="snap-drawer snap-drawer-left">
+                      <div class="drawer-inner">
+                        <ul>
+                          <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
+                          <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+                          <li><a href="pourquoi-nous.html"><i class="mdi mdi-file-image-box"></i> <span>Pourquoi Nous ?</span></a></li>
+                          <li><a href="prestations.html"><i class="mdi mdi-rss"></i> <span>Nos Prestations</span></a></li>
+                          <li><a href="nos-clients.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
+                          <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nous Contacter</span></a></li>
+                        </ul>
 
-        <!-- Left Sidebar -->
-        <div class="snap-drawer snap-drawer-left">
-          <div class="drawer-inner">
-            <ul>
-              <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
-              <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
-              <li><a href="pourquoi-nous.html"><i class="mdi mdi-file-image-box"></i> <span>Pourquoi Nous ?</span></a></li>
-              <li><a href="prestations.html"><i class="mdi mdi-rss"></i> <span>Nos Prestations</span></a></li>
-              <li><a href="nos-clients.html"><i class="mdi mdi-map-marker"></i> <span>Nos Clients</span></a></li>
-              <li><a href="contact.html"><i class="mdi mdi-map-marker"></i> <span>Nous Contacter</span></a></li>
-            </ul>
+                        </div>
+                    </div> <!-- End of Left Sidebar -->
 
-            </div>
-        </div> <!-- End of Left Sidebar -->
+            </div> <!-- End of Sidebars -->
 
-    </div> <!-- End of Sidebars -->
+            <!-- Page Content -->
+            <div class="snap-content z-depth-5" id="content">
 
-      <!-- Page Content -->
-      <div class="snap-content z-depth-5" id="content">
-          
-        <!-- Toolbar -->
-        <div id="toolbar">
-          <div class="open-left" id="open-left">
-            <i class="mdi mdi-sort-variant"></i>
-          </div>
-          <span class="title">Morman Design</span>
-        </div>
-          
-        <div class="scene_element splash scene_element--fadeinup">
-            
-            <div id="about">
-				<div class="container">
-					<div class="title-box animated-area">
-						<h1 class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">MyHairManager</h1>
-						<p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">Mauris nec tortor ut enim tempus molestie. Etiam a pellentesque metus. Phasellus arcu nibh, tincidunt id nulla vel, mollis tristique nunc</p>
-					</div>
-					<div class="services-box">
-						<div class="row animated-area">
+                    <!-- Toolbar -->
+                    <div id="toolbar">
+                      <div class="open-left" id="open-left">
+                        <i class="mdi mdi-sort-variant"></i>
+                      </div>
+                      <span class="title">Morman Design</span>
+                    </div>
 
-							<div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
-								<div class="services-post">
-									<a class="services-icon" href="#"><i class="fa fa-eye"></i></a>
-									<h2>Clean Design</h2>
-									<p>Incredibly clean design provides you powerful way to grow your business</p>
-								</div>
-							</div>
+                <div class="scene_element splash scene_element--fadeinup">
 
-							<div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
-								<div class="services-post">
-									<a class="services-icon" href="#"><i class="fa fa-pencil"></i></a>
-									<h2>Pixel Perfect</h2>
-									<p>Based on a 12 column grid system, with every pixel snapped</p>
-								</div>
-							</div>
+                    <div id="about">
+                            <div class="container">
+                                <div class="title-box animated-area">
+                                    <h1 class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">MyHairManager</h1>
+                                    <p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">Mauris nec tortor ut enim tempus molestie. Etiam a pellentesque metus. Phasellus arcu nibh, tincidunt id nulla vel, mollis tristique nunc</p>
+                                </div>
+                                <div class="services-box">
+                                    <div class="row animated-area">
 
-							<div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
-								<div class="services-post">
-									<a class="services-icon" href="#"><i class="fa fa-mobile"></i></a>
-									<h2>Responsive</h2>
-									<p>Extended has been developed to keep consistency across platforms</p>
-								</div>
-							</div>
+                                        <div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
+                                            <div class="services-post">
+                                                <a class="services-icon" href="#"><i class="fa fa-eye"></i></a>
+                                                <h2>Clean Design</h2>
+                                                <p>Incredibly clean design provides you powerful way to grow your business</p>
+                                            </div>
+                                        </div>
 
-						</div>
-					</div>
-                    <div class="title-box animated-area">
-						<p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">presa MYM + en savoir plus (lien vers presta)</p>
-					</div>
-                    <div class="title-box animated-area">
-						<p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">Banniere + tableau prix MYM</p>
-					</div>
-                    <div class="title-box animated-area">
-						<h1 class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">MyHairManager</h1>
-						<p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">Mauris nec tortor ut enim tempus molestie. Etiam a pellentesque metus. Phasellus arcu nibh, tincidunt id nulla vel, mollis tristique nunc</p>
-					</div>
-				</div>
-			</div>
-        </div> <!-- End of Main Contents -->
-        <div id="blockui"></div>
-      </div> <!-- End of Page Content -->
-    </div> <!-- End of Page Container -->
+                                        <div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
+                                            <div class="services-post">
+                                                <a class="services-icon" href="#"><i class="fa fa-pencil"></i></a>
+                                                <h2>Pixel Perfect</h2>
+                                                <p>Based on a 12 column grid system, with every pixel snapped</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 animated" data-devanime="fadeIn" data-devanime-delay="0.6s">
+                                            <div class="services-post">
+                                                <a class="services-icon" href="#"><i class="fa fa-mobile"></i></a>
+                                                <h2>Responsive</h2>
+                                                <p>Extended has been developed to keep consistency across platforms</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="title-box animated-area">
+                                    <p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">presa MYM + en savoir plus (lien vers presta)</p>
+                                </div>
+                                <div class="page-header bg-4">
+                                    <h2 class="white-text">
+                                      tableau prix MYM
+                                    </h2>
+                                    <div class="overlay-gradient">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div> <!-- End of Main Contents -->
+                <div id="blockui"></div>
+            </div> <!-- End of Page Content -->
+      </div> <!-- End of Page Container -->
   </body>
 </html>
-
