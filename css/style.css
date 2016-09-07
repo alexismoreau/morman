@@ -147,7 +147,7 @@ rimary use: App & Mobile Website
 3. Typography
 -------------------------------------------------------------------*/
 body {
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat',sans-serif !important;
   background: #fff;
   color: #444;
   overflow-x: hidden;
@@ -456,7 +456,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 /* page header */
 .page-header {
   position: relative;
-  padding: 30px 20px;
+  padding: 30px 20px !important;
 }
 .page-header h2 {
   margin: 25px 0;
@@ -1993,6 +1993,7 @@ ul.bxslider {
   width:100%;
   min-width:400px;
   max-width:700px;
+  color: white;
 }
 #tarifs_index table{
   margin:0px;
