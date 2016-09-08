@@ -592,7 +592,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   left: 0;
   width: auto;
   height: auto;
-  background: #4527a0;
+  background: #303F9F;
 }
 .snap-drawer {
   position: absolute;
@@ -1323,7 +1323,7 @@ a.services-icon {
 
 a.services-icon i {
     font-size: 60px;
-    color: #4527a0;
+    color: #303F9F;
     line-height: 140px;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -1332,8 +1332,8 @@ a.services-icon i {
 }
 
 a.services-icon:hover {
-    border: 1px solid #4527a0;
-    background: #4527a0;
+    border: 1px solid #303F9F;
+    background: #303F9F;
 }
 
 a.services-icon:hover i {
