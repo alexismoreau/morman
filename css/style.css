@@ -1259,17 +1259,50 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     }
     .contact.profile-user1 > p, .contact.profile-user2 > p {
       padding-left: 25%;
+    } 
+    #bas_page .contact {
+    text-align: center;
+    } 
+    #bas_page ul {
+    display: inline !important;
+    position: relative;
+    text-align: center;
     }
-
-}
-@media only screen and (min-width: 0) {
-html {
-  font-size: 16px;
+    #bas_page > ul:nth-child(2) > li.h4 {
+    display: none;
+    }
+    #bas_page .contact {
+    text-align: center !important;
+    }
+    #bas_page .contact {
+    margin: auto;
+    margin-bottom: 10px;
+    }
+    #bas_page ul {
+    position: relative;
+    text-align: center;
+    }
+    #bas_page ul.last{
+    width:100% !important;
+    }
+    #bas_page .contact {
+    text-align: center;
+    }
+    #bas_page .contact {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 40% !important;
+    }
     
 }
-.services-post {
-  width:100% !important;
-}
+@media only screen and (min-width: 0) {
+    html {
+      font-size: 16px;
+
+    }
+    .services-post {
+      width:100% !important;
+    } 
 
 }
 #blockui{
@@ -2076,7 +2109,7 @@ ul.bxslider {
     padding-bottom:1em;
 }
 #bas_page{
-    width:1000px;
+    width:100%;
     text-align:left;
     margin:0 auto
 }
