@@ -353,7 +353,7 @@ span.badge {
 .contact img {
   position: absolute;
   top: 16px;
-  left: 0;
+  left: 1em;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -650,6 +650,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .snap-drawer li a {
   line-height: 44px;
   height: 44px;
+  text-decoration: initial;
 }
 .snap-drawer li a > span {
   margin-left: 40px;
@@ -939,14 +940,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   position: relative;
   font-size: 22px;
 }
-.contact.profile-user1 {
+.contact.profile-user1, .contact.profile-user2 {
   width: 50%;
   float: left;
-  background: url(../img/background4.jpg);
-}
-.contact.profile-user2 {
-  width: 50%;
-  float: right;
+  height: 9em;
   background: url(../img/background4.jpg);
 }
 .profile-user h4 {
@@ -1095,8 +1092,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   left: 3em;
 }
 .contact.profile-user2 > a > img, .contact.profile-user1 > a > img {
-  left: 6em;
-  top: 7em;
+  left: 85%;
+  top: 35%;
   width: auto;
   height: 40px;
   border-radius: initial;
@@ -1244,10 +1241,23 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 9. Media Queries
 -------------------------------------------------------------------*/
 @media only screen and (max-width: 750px) {
-.input-field .prefix ~ input {
-  width: 80%;
-  width: calc(100% - 29px);
-}
+    .input-field .prefix ~ input {
+      width: 80%;
+      width: calc(100% - 29px);
+    }
+    .contact.profile-user1, .contact.profile-user2 {
+    width: 100%;
+    }
+    .contact img {
+      left: 10%;
+    }
+    .contact.profile-user1 > h4, .contact.profile-user2 > h4 {
+      margin: 1.14rem 0 0.912rem 25%;
+    }
+    .contact.profile-user1 > p, .contact.profile-user2 > p {
+      padding-left: 25%;
+    }
+
 }
 @media only screen and (min-width: 0) {
 html {
@@ -1257,6 +1267,7 @@ html {
 .services-post {
   width:100% !important;
 }
+
 }
 #blockui{
     position: absolute;
