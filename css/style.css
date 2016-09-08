@@ -554,6 +554,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   background-color: transparent;
   border: none;
   color: white;
+  font-size: initial;
 }
 
 .snap-drawers .collapsible-body > ul > li > div:nth-child(4) {
@@ -655,6 +656,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 .snap-drawer li a > span {
   margin-left: 40px;
+  font-size: 16px;
 }
 .snap-drawer li a > i {
   position: absolute;
@@ -1293,18 +1295,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     margin-bottom: 10px;
     width: 40% !important;
     }
+    .services-post {
+      width:100%;
+    }
     
 }
-@media only screen and (min-width: 0) {
-    html {
-      font-size: 16px;
 
-    }
-    .services-post {
-      width:100% !important;
-    } 
-
-}
 #blockui{
     position: absolute;
     height: 100%;
@@ -1401,7 +1397,6 @@ a.services-icon:hover i {
 
 .services-post {
     margin-bottom: 35px;
-    width: 33.33%;
     float: left;
 }
 
@@ -1941,7 +1936,9 @@ ul.bxslider {
 #comment-form input[type="submit"]:active {
     background: #42823d;
 }
-
+.cgu-text {
+    color: #20B2AA;
+}
 #msg-error,
 #msg-success {
     background: #fff;
@@ -2183,7 +2180,7 @@ ul.bxslider {
     cursor:pointer;
     display:block;
     margin-top:10px;
-    text-align:left;
+    text-align:center;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
@@ -2227,4 +2224,14 @@ ul.bxslider {
 }
 #bas_page > div > a{
   color: white;
+}
+#bas_page > div > a:hover {
+  text-decoration: none;
+  color: #4597b7;
+}
+h5{
+    text-align: center;
+}
+.link-cnil{
+    color:#039be5;
 }
