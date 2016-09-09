@@ -2234,3 +2234,13 @@ h5{
 .link-cnil{
     color:#039be5;
 }
+.accroche-prestas {
+    text-align: left;
+}
+#photo-50-1 {
+    width:50%;
+    float: left;
+}
+#photo-50-2{
+    width: 50%;
+}
