@@ -555,10 +555,18 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   border: none;
   color: white;
   font-size: initial;
+  padding-bottom: 10px;
+}
+
+#main > div.snap-drawers > div > div > ul > li.have-child > ul > li > div.collapsible-header {
+  padding-bottom: 0;
 }
 
 .snap-drawers .collapsible-body > ul > li > div:nth-child(4) {
-  line-height: 140%;
+  line-height: 131%;
+}
+.snap-drawers .collapsible-body > ul > li > div:nth-child(3) {
+  line-height: 150%; 
 }
 
 .snap-drawer .collapsible-body {
@@ -656,7 +664,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 .snap-drawer li a > span {
   margin-left: 40px;
-  font-size: 16px;
+  font-size: 15.5px;
 }
 .snap-drawer li a > i {
   position: absolute;
@@ -2047,10 +2055,38 @@ ul.bxslider {
   max-width:1000px;
   color: white;
 }
-#tarifs_index table{
+#tarifs_index table, #tarifs_recapitulatif table{
   margin:0px;
   width:100%;
 }
+#tarifs_index table > thead > tr > th, #tarifs_recapitulatif table > thead > tr > th, #tarifs_index table > tbody > tr > td, #tarifs_recapitulatif table > tbody > tr > td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*tableau recapitulatif*/
+
+#tarifs_recapitulatif{
+  margin:10px auto;
+  width:100%;
+  min-width:400px;
+  max-width:1000px;
+  color: black;
+  padding: 10px;
+}
+#tarifs_index table, #tarifs_recapitulatif table{
+  margin:0px;
+  width:100%;
+}
+#tarifs_recapitulatif > div > table > thead > tr > th, #tarifs_recapitulatif > div > table > tbody > tr, #tarifs_recapitulatif > div > table > tbody > tr > td {
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+#tarifs_recapitulatif > div > table > tbody {
+  border: 1px solid black;   
+}
+
 
 @media (max-width: 750px) {
         .responsive-table-line td:before { content: attr(data-title); }
@@ -2062,7 +2098,11 @@ ul.bxslider {
         .responsive-table-line tr { 
         display: block; 
     }
-
+    #tarifs_recapitulatif > div > table {
+        display: flex;
+        margin: initial;
+        width: initial;
+    }
     .responsive-table-line thead tr { 
         display:none;
     }
@@ -2087,11 +2127,6 @@ ul.bxslider {
         border-right: 1px solid white;
     }
 
-}
-
-#tarifs_index table > thead > tr > th, #tarifs_index table > tbody > tr > td {
-    text-align: center;
-    vertical-align: middle;
 }
 
 /*-------------------------------------------------*/
