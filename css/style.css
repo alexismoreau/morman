@@ -224,7 +224,7 @@ img {
   transform: translate3d(0,0,0);
 }
 .container {
-  padding: 20px;
+  padding: 1em 0 0 0px !important;
   width: 100%;
 }
 .container .row {
@@ -1307,6 +1307,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     .services-post {
       width:100%;
     }
+    .accroche-prestas {
+      text-align: center !important;
+    }
+    .page-header {
+    padding: 26px 1px !important;
+    }
+
     
 }
 
@@ -2052,7 +2059,6 @@ ul.bxslider {
 #tarifs_index{
   margin:10px auto;
   width:100%;
-  min-width:400px;
   max-width:1000px;
   color: white;
 }
@@ -2070,7 +2076,6 @@ ul.bxslider {
 #tarifs_recapitulatif{
   margin:10px auto;
   width:100%;
-  min-width:400px;
   max-width:1000px;
   color: black;
   padding: 10px;
