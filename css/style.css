@@ -560,6 +560,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 #main > div.snap-drawers > div > div > ul > li.have-child > ul > li > div.collapsible-header {
   padding-bottom: 0;
+  font-size: 15.5px;
 }
 
 .snap-drawers .collapsible-body > ul > li > div:nth-child(4) {
@@ -2086,7 +2087,10 @@ ul.bxslider {
 #tarifs_recapitulatif > div > table > tbody {
   border: 1px solid black;   
 }
-
+#tarifs_recapitulatif > div > table > thead {
+    background: #303F9F;
+    color: white;
+}
 
 @media (max-width: 750px) {
         .responsive-table-line td:before { content: attr(data-title); }
