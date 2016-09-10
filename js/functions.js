@@ -68,47 +68,6 @@ $(function(){
     }
 
   })(document, window.navigator, "standalone");
-
-  var duration_CONSTANT = 250;
-  var options = {
-    prefetch: true,
-    cacheLength: 20,
-    onStart: {
-      duration: duration_CONSTANT,
-      render: function ($container) {
-        $container.addClass('is-exiting');
-        smoothState.restartCSSAnimations();
-        setTimeout(function () {
-          if(initSidebar instanceof Function) {
-            initSidebar();
-          }
-        },duration_CONSTANT*2);
-      }
-    },
-
-    onReady: {
-      duration: 0,
-      render: function ($container, $newContent) {
-        $container.removeClass('is-exiting');
-        $container.html($newContent);
-      }
-    },
-
-    onAfter: function($container, $newContent) {
-      // Recall plugin here
-      $('ul.tabs').tabs(); 
-      $('.collapsible').collapsible();
-      var model_div = '<div id="modal1" class="modal bottom-sheet features"> <div class="modal-content"> <div class="row"> <div class="col s3"> <a href="profile.html"> <i class="close-opacity mdi mdi-account"></i> <p>About</p> </a> </div> <div class="col s3"> <a href="portfolio.html"> <i class="mdi mdi-file-image-box"></i> <p>Photos</p> </a> </div> <div class="col s3"> <a href="blog.html"> <i class="mdi mdi-book-multiple-variant"></i> <p>Blog</p> </a> </div> <div class="col s3"> <a href="news.html"> <i class="mdi mdi-rss"></i> <p>News</p> </a> </div> </div> <div class="row"> <div class="col s3"> <a href="timeline.html"> <i class="mdi mdi-timelapse"></i> <p>Timeline</p> </a> </div> <div class="col s3"> <a href="messages.html"> <i class="mdi mdi-bell"></i> <p>Chat</p> </a> </div> <div class="col s3"> <a href="todo.html"> <i class="mdi mdi-checkbox-marked-outline"></i> <p>To Do</p> </a> </div> <div class="col s3"> <a href="login.html"> <i class="mdi mdi-account-plus"></i> <p>Account</p> </a> </div> </div> </div> </div>';
-      $('body').prepend(model_div);
-      $('.modal-trigger').leanModal();
-      $(function() {
-          var div = $('.box');
-          var width = div.width();
-          div.css('height', width);
-      });
-    }
-    
-  };
   
   var smoothState = $('#main').smoothState(options).data('smoothState');
 
