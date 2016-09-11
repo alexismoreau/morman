@@ -1313,8 +1313,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     .page-header {
     padding: 26px 1px !important;
     }
-
-    
 }
 
 #blockui{
@@ -1337,6 +1335,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 #cont {
     text-align: center;
+    min-height: 30em;
 }
 
 .title-box {

@@ -2,13 +2,17 @@
 <html lang="fr-FR">
   <head>
     <title>
-      Morman Design
+      Morman Design | Edition de solutions web pour les salons de coiffure
     </title>
-    <meta http-equiv="content-type" content="charset=utf-8">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" /> <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152-precomposed.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta content="IE=edge" http-equiv="x-ua-compatible">
     <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="description" content="Nous développons des solutions web pour votre salon de coiffure, avec prise de RDV en ligne pour faciliter la vie de votre salon et de vos clients." />
+    <meta name="keywords" content="morman design editeur application solution sie salon coiffure paris france web coiffeur rdv rendez-vous rendez vous prendre en ligne" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
@@ -23,6 +27,11 @@
     <script src="js/sidebar.js"></script> 
     <script src="js/functions.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-79154607-1", {"cookieDomain":"auto"});ga("send", "pageview");
+        //--><!]]>
+    </script>
   </head>
   <body>
   <div class="m-scene" id="main"> <!-- Page Container -->
@@ -33,8 +42,8 @@
         <div class="snap-drawer snap-drawer-left">
           <div class="drawer-inner">
             <ul>
-              <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
-              <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+              <li><a href="index.html" title="Index"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
+              <li><a href="qui-sommes-nous.html" title="Qui sommes-nous ?"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
               <li class="have-child">
                 <ul class="collapsible" data-collapsible="accordion">
                   <li>
@@ -45,16 +54,16 @@
                       <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="myhairmanager.html"> MyHairManager</a>
+                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="myhairmanager.html" title="MyHairManager"> MyHairManager</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="site_vitrine.html"> Site Vitrine</a>
+                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="site-vitrine.html" title="Site Vitrine"> Site Vitrine</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="site_e-commerce.html"> Plateforme E-Commerce</a>
+                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="site-e-commerce.html" title="Site e-commerce"> Plateforme E-Commerce</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="plateforme_prise_de_rdv.html"> Plateforme de Prise de Rendez-vous</a>
+                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="plateforme-prise-de-rdv.html" title="Plateforme de Prise de RDV"> Plateforme de Prise de Rendez-vous</a>
                           </div>
                         </li>
                       </ul>
@@ -63,8 +72,8 @@
                 </ul>
               </li>
               <!-- <li><a href="recapitulatif.html"><i class="mdi mdi-credit-card"></i> <span>Récapitulatif des Tarifs</span></a></li> -->
-              <li><a href="docs/Demande%20de%20Prestations.pdf"><i class="mdi mdi-file"></i> <span>Demande de Prestation</span></a></li>
-              <li><a href="contact.html"><i class="mdi mdi-email"></i> <span>Nous Contacter</span></a></li>
+              <!-- <li><a href="docs/Demande%20de%20Prestations.pdf"><i class="mdi mdi-file"></i> <span>Demande de Prestation</span></a></li> -->
+              <li><a href="contact.html"><i class="mdi mdi-email" title="Contact"></i> <span>Nous Contacter</span></a></li>
             </ul>
 
             </div>
@@ -138,7 +147,7 @@
                                             <div class="accroche">
                                             Notre produit facilitera l’interaction sociale entre votre salon et vos clients.  <br><br>                                                                       </div>                                         
                                              
-                                    <a class="link" href="myhairmanager.html">Plus de détails sur MyHairManager.. </a>
+                                    <a class="link" href="myhairmanager.html" title="Détails sur MyHairManager">Plus de détails sur MyHairManager.. </a>
                                         </div>
                                     </div>
                                 </div>
@@ -177,10 +186,11 @@
                                     <ol class="liste-fonctions">                                    
                                                 <li>Un site vitrine</li>
                                                 <li>Une plateforme e-commerce sécurisée</li>
-                                                <li>Une plateforme de prise de Rendez-vous</li> <br>                               
+                                                <li>Une plateforme de prise de Rendez-vous</li>                              
                                             </ol>
+                                <br> 
                                 <div class="texte">
-                                    <p> <a class="link" href="docs/Demande%20de%20Prestations.pdf">Une demande de prestations </a> est téléchargeable afin de répondre à toutes vos volontés.</p> <p>Nous vous communiquerons un devis détaillé correspondant à vos demandes.</p> <br><br>                                    
+                                    <p> <a class="link" href="docs/Demande%20de%20Prestations.pdf" title="Demande de prestation">Une demande de prestations </a> est téléchargeable afin de répondre à toutes vos volontés.</p> <p>Nous vous communiquerons un devis détaillé correspondant à vos demandes.</p> <br><br>                                    
                                 </div>
                             </div> <!-- End of container -->
                     </div> <!-- End of cont -->
@@ -194,20 +204,20 @@
                                     <div id="bas_page">
                                         <ul>
                                             <li class="h4"><a>Prestations</a></li>
-                                            <li><a href="myhairmanager.html">MyHairManager</a></li>
-                                            <li><a href="site_e-commerce.html">Site e-Commerce</a></li>
+                                            <li><a href="myhairmanager.html" title="MyHairManager">MyHairManager</a></li>
+                                            <li><a href="site-e-commerce.html"title="Site e-commerce">Site e-Commerce</a></li>
 
                                         </ul>
                                         <ul>
                                             <li class="h4"><a href="/fr"></a></li>
-                                            <li><a href="plateforme_prise_de_rdv.html">Plateforme de Prise de Rendez-vous</a></li>
-                                            <li><a href="site_vitrine.html">Site vitrine</a></li>
+                                            <li><a href="plateforme-prise-de-rdv.html"  title="Plateforme de Prise de RDV">Plateforme de Prise de Rendez-vous</a></li>
+                                            <li><a href="site-vitrine.html" title="Site Vitrine">Site vitrine</a></li>
                                         </ul>
 
                                         <ul class="last">
                                             <li class="h4">Des Questions ?</li>
                                             <li style="border-bottom:0px">                                     
-                                            <a href="contact.html" class="contact"><i class="fa fa-envelope-o"></i>Contactez-nous !<i class="fa fa-angle-right"></i></a>
+                                            <a href="contact.html" class="contact" title="Contact"><i class="fa fa-envelope-o"></i>Contactez-nous !<i class="fa fa-angle-right"></i></a>
 
                                         </ul>
                                         <div>

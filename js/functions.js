@@ -68,8 +68,6 @@ $(function(){
     }
 
   })(document, window.navigator, "standalone");
-  
-  var smoothState = $('#main').smoothState(options).data('smoothState');
 
 });
 
