@@ -2067,6 +2067,7 @@ ul.bxslider {
 #tarifs_index table > thead > tr > th, #tarifs_recapitulatif table > thead > tr > th, #tarifs_index table > tbody > tr > td, #tarifs_recapitulatif table > tbody > tr > td {
     text-align: center;
     vertical-align: middle;
+    min-width: 10em;
 }
 
 /*tableau recapitulatif*/
