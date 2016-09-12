@@ -2287,3 +2287,18 @@ h5{
 #photo-50-2{
     width: 50%;
 }
+
+/*-------------------------------------------------*/
+/* =  Barre cookies
+/*-------------------------------------------------*/
+
+#cookieChoiceInfo > span {
+    color: white;
+}
+#cookieChoiceInfo > a {
+    color: white;
+}
+#cookieChoiceInfo > a:hover {
+    text-decoration: none;
+    color: #337ab7;
+}
