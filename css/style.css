@@ -188,6 +188,7 @@ a {
   color: black;
   font-size: 18px;
 }
+
 .liste-fonctions {
   display: inline-block;
   list-style-type: disc;
@@ -226,6 +227,7 @@ img {
 .container {
   padding: 1em 0 0 0px !important;
   width: 100%;
+  min-height: inherit;
 }
 .container .row {
   margin-bottom: 0;
@@ -518,6 +520,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   width: 56px;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 .open-right {
   float: right;
@@ -818,6 +821,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .contacts-information h4 {
   margin-bottom: 20px;
   text-align: center;
+  margin: 0;
 }
 
 /* Login */
@@ -1091,6 +1095,18 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .timeline .link {
   color: #039be5;
 }
+.doc-demande-presta > p:nth-child(1) > a:hover {
+  color: #23527c;
+  text-decoration: none;
+}
+.texte > p:nth-child(1) > a:hover {
+  text-decoration: none;  
+}
+.timeline > div > div > div:nth-child(1) > span > a:hover, .timeline > div > div > div:nth-child(4) > span > a:hover {
+   color: #23527c;
+  text-decoration: none; 
+}
+
 .profile-user1 > img:nth-child(4), .profile-user2 > img:nth-child(4) {
   top: 118px;
   width: 90px;
@@ -1111,6 +1127,22 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   height: 40px;
   border-radius: initial;
 }
+
+.MHM_details > a {
+    font-size: 32px;
+}
+.MHM_details > a:hover {
+    color: #324253;
+    text-decoration: none;
+}
+.MHM_details > a > span {
+    color: #337ab7;
+}
+.MHM_details > a > span:hover {
+    color: #324253;
+}
+#cont > div > div.texte > p:nth-child(1) > a
+
 /* ToDo */
 .todo input[type="checkbox"]:checked + label {
   text-decoration: line-through;
@@ -1313,6 +1345,15 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     .page-header {
     padding: 26px 1px !important;
     }
+    #tarifs_recapitulatif {
+    display: none !important;
+    }
+    .lien-recap-tarifs {
+    display: block !important;
+    }
+    #modal3 {
+    min-height: 36em;
+    }
 }
 
 #blockui{
@@ -1322,7 +1363,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     top: 0;
     display: none;
 }
-
+.logo{
+    width: 120px;
+    margin: auto;
+}
+.logo > a > img {
+    height: auto;
+}
 /*-------------------------------------------------*/
 /* =  Content
 /*-------------------------------------------------*/
@@ -2301,4 +2348,19 @@ h5{
 #cookieChoiceInfo > a:hover {
     text-decoration: none;
     color: #337ab7;
+}
+
+/*-------------------------------------------------*/
+/* =  Récapitulatif des tarifs
+/*-------------------------------------------------*/
+
+.responsive-table-line {
+    display: block;
+}
+.lien-recap-tarifs {
+    display: none;
+}
+.lien-recap-tarifs > a:hover {
+    color: #039be5;
+    text-decoration: none;
 }
