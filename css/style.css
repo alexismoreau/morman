@@ -388,6 +388,11 @@ span.badge {
   border-radius: 50%;
 }
 
+#content > div.scene_element.contacts.scene_element--fadeinup > iframe {
+    width: 100%;
+    height: 120%;
+}
+
 #envoyer {
   padding: 5px 15px;
   background: #20B2AA;
@@ -2134,6 +2139,7 @@ ul.bxslider {
   border: 1px solid black;
   text-align: center;
   vertical-align: middle;
+  width: 33.333333%;
 }
 #tarifs_recapitulatif > div > table > tbody {
   border: 1px solid black;   
