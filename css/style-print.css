@@ -2297,3 +2297,9 @@ h5{
 #cookieChoiceInfo {
     display: none;
 }
+.services-box > div > div:nth-child(3) {
+    padding-top: 4em;
+}
+#bas_page > ul {
+    display: none;
+}
