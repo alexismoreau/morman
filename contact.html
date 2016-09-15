@@ -24,9 +24,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>      
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
-    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/keyframes.min.css" rel="stylesheet" type="text/css">
     <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="m-scene" id="main"> <!-- Page Container -->
@@ -128,25 +128,18 @@
             <a class="waves-effect waves-light btn-large modal-trigger primary-color" href="#modal3"><i class="mdi mdi-email left"></i>Contactez Nous</a>
           </div>
 
-          <iframe height="120%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10511.568595245732!2d2.364911!3d48.803037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d584c7aeb1b82!2sMorman+Design!5e0!3m2!1sfr!2sfr!4v1472066833588" style="position:absolute;top:0;border:none;" width="100%"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10511.568595245732!2d2.364911!3d48.803037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d584c7aeb1b82!2sMorman+Design!5e0!3m2!1sfr!2sfr!4v1472066833588" style="position:absolute;top:0;border:none;"></iframe>
 
         </div> <!-- End of Main Contents -->
         <div id="blockui"></div>
       </div> <!-- End of Page Content -->
     </div> <!-- End of Page Container -->
-      
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/snap.js"></script>
-    <script src="js/jquery.smoothState.min.js"></script>
-    <script src="js/sidebar.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/contactForm.js"></script>
+    <script src="js/built.js"></script>  
     <script src="js/cookiechoices.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('Ce site utilise des cookies pour effectuer des statistiques de visite. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'J’accepte', 'En savoir plus', 'https://morman.fr/confidentialite.html');});
-  </script>
-  <script>
+    </script>
+    <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -154,7 +147,6 @@
 
           ga('create', 'UA-79154607-1', 'auto');
           ga('send', 'pageview');    
-      
-  </script>
+    </script>
   </body>
 </html>

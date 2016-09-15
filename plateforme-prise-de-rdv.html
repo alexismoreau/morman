@@ -14,17 +14,10 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
-    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/keyframes.min.css" rel="stylesheet" type="text/css">
     <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/snap.js"></script> 
-    <script src="js/jquery.smoothState.min.js"></script> 
-    <script src="js/sidebar.js"></script> 
-    <script src="js/functions.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
   <div class="m-scene" id="main"> <!-- Page Container -->
@@ -120,7 +113,7 @@
                                     <p class="animated" data-devanime="fadeIn" data-devanime-delay="0.6s">N’hésitez pas à nous soumettre vos requêtes personnalisées ou vos idées afin de créer ensemble une plateforme de prise de Rendez-vous en ligne correspondant à vos attentes ou à vos activités.</p>
                                 </div>
 
-                                    <img class="img-responsive" id="photo-100" src="img/rdv.jpg"/>
+                                    <img class="img-responsive" id="photo-100" src="img/rdv.jpg" alt="photo-calendrier-rdv"/>
 
                                 
                                 <div class="page-header bg-4">                         
@@ -129,7 +122,7 @@
                                         <table class="table table-bordered table-condensed table-body-center" >
                                         <thead>
                                             <tr>
-                                                <th>Fonctionnalités</th></th>
+                                                <th>Fonctionnalités</th>
                                                 <th>Standard</th>
                                                 <th>Système de gestion des collaborateurs</th>
                                                 <th>Rappel automatique du RDV par SMS</th>
@@ -196,7 +189,7 @@
           <div id="blockui"></div>
       </div> <!-- End of Page Content -->
       </div> <!-- End of Page Container -->
-  </body>
+  <script src="js/built.js"></script>
   <script src="js/cookiechoices.js"></script>
   <script>
       document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('Ce site utilise des cookies pour effectuer des statistiques de visite. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'J’accepte', 'En savoir plus', 'https://morman.fr/confidentialite.html');});
@@ -210,5 +203,7 @@
           ga('create', 'UA-79154607-1', 'auto');
           ga('send', 'pageview');    
   </script>
+  </body>
 </html>
+
 
