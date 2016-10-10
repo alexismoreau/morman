@@ -2,7 +2,7 @@
 <html lang="fr-FR">
   <head>
     <title>
-      Morman Design | Edition de solutions web pour les salons de coiffure
+      Morman Design | Edition de logiciels web pour les salons de coiffure
     </title>
     <link rel="icon" href="img/logo.ico" type="image/x-icon" /> <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152-precomposed.png" />
@@ -39,8 +39,8 @@
         <div class="snap-drawer snap-drawer-left">
           <div class="drawer-inner">
             <ul>
-              <li><a href="index.html"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
-              <li><a href="qui-sommes-nous.html"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+              <li><a href="index.html" alt="Acceuil" title="Index"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
+              <li><a href="qui-sommes-nous.html" alt="Qui Sommes-Nous ?" title="Qui sommes-nous ?"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
               <li class="have-child">
                 <ul class="collapsible" data-collapsible="accordion">
                   <li>
@@ -51,16 +51,16 @@
                       <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header">
-                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="myhairmanager.html"> MyHairManager</a>
+                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="myhairmanager.html" alt="MyHairManager" title="MyHairManager"> MyHairManager</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="site-vitrine.html"> Site Vitrine</a>
+                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="site-vitrine.html" alt="Site Vitrine" title="Site Vitrine"> Site Vitrine</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="site-e-commerce.html"> Plateforme E-Commerce</a>
+                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="site-e-commerce.html" alt="Site e-commerce" title="Site e-commerce"> Plateforme E-Commerce</a>
                           </div>
                           <div class="collapsible-header">
-                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="plateforme-prise-de-rdv.html"> Plateforme de Prise de Rendez-vous</a>
+                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="plateforme-prise-de-rdv.html" alt="Plateforme de Prise de RDV" title="Plateforme de Prise de RDV"> Plateforme de Prise de Rendez-vous</a>
                           </div>
                         </li>
                       </ul>
@@ -68,9 +68,9 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="recapitulatif.html"><i class="mdi mdi-credit-card"></i> <span>Récapitulatif des Tarifs</span></a></li>
+              <li><a href="recapitulatif.html" alt="Recapitulatif des Tarifs"><i class="mdi mdi-credit-card"></i> <span>Récapitulatif des Tarifs</span></a></li>
               <li><a href="docs/demande-de-prestations.pdf"><i class="mdi mdi-file-pdf"></i> <span>Demande de Prestation</span></a></li>
-              <li><a href="contact.html"><i class="mdi mdi-email"></i> <span>Nous Contacter</span></a></li>
+              <li><a href="contact.html" alt="Nous Contacter"><i class="mdi mdi-email" title="Nous Contacter"></i> <span>Nous Contacter</span></a></li>
             </ul>
 
             </div>
@@ -78,121 +78,144 @@
 
     </div> <!-- End of Sidebars -->
         
-      <!-- Page Content -->
-      <div class="snap-content z-depth-5" id="content">
-
-        <!-- Toolbar -->
+      <!-- Toolbar -->
         <div id="toolbar">
           <div class="open-left" id="open-left">
-            <i class="mdi mdi-sort-variant"></i>
+            <i class="mdi mdi-menu"></i>
           </div>
           <span class="title">Récapitulatif des tarifs</span>
         </div>
 
+      <!-- Page Content -->
+      <div class="snap-content z-depth-5" id="content">
                 <!-- Main Content -->
                 <div class="scene_element scene_element--fadeinup">
 
                     <div id="cont">
                             <div class="container">
                                 <div class="lien-recap-tarifs">
-                                    <a class="lien-fichier-recap" href="docs/recapitulatif-des-tarifs.pdf" title="Recapitulatif Des Tarifs">Télécharger le récapitulatif de nos tarifs</a>    
+                                    <a class="lien-fichier-recap" href="docs/recapitulatif-des-tarifs.pdf" title="Recapitulatif Des Tarifs">Télécharger le récapitulatif de nos tarifs en PDF</a>    
                                 </div>
-                                <div id="tarifs_recapitulatif" class="table-responsive">
-                                    <div class="responsive-table-line" style="margin:0px auto;max-width:1000px;">
+                                <h1>MyHairManager</h1>
+                                <div class="page-header bg-4">                         
+                                    <div id="tarifs_index" class="table-responsive">
+                                        <div class="responsive-table-line" style="margin:0px auto;max-width:1000px;">
                                         <table class="table table-bordered table-condensed table-body-center" >
-                                            <thead>
-                                                <tr>
-                                                    <th>Prestation</th>
-                                                    <th>Fonctionnalités</th>
-                                                    <th>Tarif (€ HT)</th>
-
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan=3 class="case-1">Site Vitrine</td>
-                                                    <td class="case-2">Standard</td>
-                                                    <td class="case_3">700€</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Possède déja un site</td>
-                                                    <td class="case-3">Sur RDV</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">avec Maquette</td>
-                                                    <td class="case-3">Sur RDV</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan=4 class="case-1">Prise de RDV</td>
-                                                    <td class="case-2">Standard</td>
-                                                    <td class="case-3">30€ / mois</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Gestion Employés</td>
-                                                    <td class="case-3">+ 5€ / mois</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Rappel SMS</td>
-                                                    <td class="case-3">+ 0.08€ / SMS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">avec Maquette</td>
-                                                    <td class="case-3">Sur RDV</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan=5 class="case-1">Site E-Commerce</td>
-                                                    <td class="case-2">Standard</td>
-                                                    <td class="case-3">25€ + 1,8% / transaction</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Gestion des Stocks</td>
-                                                    <td class="case-3">+ 5€ / mois</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Paypal</td>
-                                                    <td class="case-3">+ 5€ / mois</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Mailing Nouveaux Produits</td>
-                                                    <td class="case-3">+ 5€ / mois</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Possède un Site</td>
-                                                    <td class="case-3">Sur RDV</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan=4 class="case-1">My Hair Manager</td>
-                                                    <td class="case-2">Lite</td>
-                                                    <td class="case-3">25€ + 0,08€ / SMS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Plus</td>
-                                                    <td class="case-3">35€ + 0,08€ / SMS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Pro</td>
-                                                    <td class="case-3">45€ + 0,08€ / SMS</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="case-2">Premium</td>
-                                                    <td class="case-3">55€ + 0,08€ / SMS</td>
-                                                </tr>
-                                            </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th>Versions</th>
+                                                <th>MyHairManager Lite</th>
+                                                <th>MyHairManager Plus</th>
+                                                <th>MyHairManager Pro</th>
+                                                <th>MyHairManager Premium</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="case_price" data-title="Versions">Tarif au mois (HT)</td>
+                                                <td class="case_price" data-title="MyHairManager Lite">25€ + 0,08€/SMS</td>
+                                                <td class="case_price" data-title="MyHairManager Plus">35€ + 0,08€/SMS</td>
+                                                <td class="case_price" data-title="MyHairManager Pro">45€ + 0,08€/SMS</td>
+                                                <td class="case_price" data-title="MyHairManager Premium">55€ + 0,08€/SMS</td>
+                                            </tr>
+                                        </tbody>
                                         </table>
-                                        <a class="lien-fichier-recap" href="docs/recapitulatif-des-tarifs.pdf" title="Recapitulatif Des Tarifs">Version PDF des tarifs</a>
+                                        </div>
+
                                     </div>
+                                    <div class="overlay-gradient"></div>
                                 </div>
-                            </div> <!-- End of container -->
+                                <h1>Site Vitrine</h1>
+                                <div class="page-header bg-4">                         
+                                    <div id="tarifs_index" class="table-responsive">
+                                        <div class="responsive-table-line" style="margin:0px auto;max-width:1000px;">
+                                        <table class="table table-bordered table-condensed table-body-center" >
+                                        <thead>
+                                            <tr>
+                                                <th>Fonctionnalités</th>
+                                                <th>Site vitrine standard</th>
+                                                <th>Possèdant déja un site</th>
+                                                <th>Maquette réfléchie</th>                                       
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="case_price" data-title="Fonctionnalités">Tarif (HT)</td>
+                                                <td class="case_price" data-title="Site vitrine standard">700€</td>
+                                                <td class="case_price" data-title="Possèdant déja un site">Sur Rdv</td>
+                                                <td class="case_price" data-title="Maquette réfléchie">Sur Rdv</td>                                
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="overlay-gradient"></div>
+                                </div>
+                                <h1>Plateforme E-Commerce</h1>
+                                <div class="page-header bg-4">                         
+                                    <div id="tarifs_index" class="table-responsive">
+                                        <div class="responsive-table-line" style="margin:0px auto;max-width:1000px;">
+                                        <table class="table table-bordered table-condensed table-body-center" >
+                                        <thead>
+                                            <tr>
+                                                <th>Fonctionnalités</th>
+                                                <th>Plateforme standard</th>
+                                                <th>Système de gestion des Stocks</th>
+                                                <th>Paiement par Paypal</th>
+                                                <th>Système de mailling pour les nouveaux produits</th>
+                                                <th>Je possède déja un site et je voudrais adapter ce dernier</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="case_price" data-title="Fonctionnalités">Tarif au mois (HT)</td>
+                                                <td class="case_price" data-title="Plateforme standard">25€ + 1,8% de frais de transaction</td>
+                                                <td class="case_price" data-title="Système de gestion des Stocks">+5€/mois</td>
+                                                <td class="case_price" data-title="Paiement par Paypal">+5€/mois</td>
+                                                <td class="case_price" data-title="Système de mailling pour les nouveaux produits">+5€/mois</td>
+                                                <td class="case_price" data-title="Je possède déja un site et je voudrais adapter ce dernier">Sur Rdv</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="overlay-gradient"></div>
+                                </div>
+                                <h1>Plateforme de prise de RDV</h1>
+                                <div class="page-header bg-4">                         
+                                    <div id="tarifs_index" class="table-responsive">
+                                        <div class="responsive-table-line" style="margin:0px auto;max-width:1000px;">
+                                        <table class="table table-bordered table-condensed table-body-center" >
+                                        <thead>
+                                            <tr>
+                                                <th>Fonctionnalités</th>
+                                                <th>Standard</th>
+                                                <th>Système de gestion des collaborateurs</th>
+                                                <th>Rappel automatique du RDV par SMS</th>
+                                                <th>Je possède déja un site et je voudrais adapter ce dernier</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="case_price" data-title="Fonctionnalités">Tarif au mois (HT)</td>
+                                                <td class="case_price" data-title="Standard">30€</td>
+                                                <td class="case_price" data-title="Système de gestion des collaborateurs">+5€/mois</td>
+                                                <td class="case_price" data-title="Rappel automatique du RDV par SMS">+ 0,08€/SMS</td>
+                                                <td class="case_price" data-title="Je possède déja un site et je voudrais adapter ce dernier">Sur Rdv</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="overlay-gradient"></div>
+                                </div>
+                                <br>
+                        </div> <!-- End of container -->
                     </div> <!-- End of cont -->
-                </div> <!-- End of Main Contents -->
-            
+                </div> <!-- End of Main Contents --> 
             
                 <!-- Footer -->
         <div class="footer">
@@ -216,10 +239,10 @@
                                             <li class="h4">Des Questions ?</li>
                                             <li style="border-bottom:0px">                                     
                                             <a href="contact.html" class="contact" title="Contact"><i class="fa fa-envelope-o"></i>Contactez-nous !<i class="fa fa-angle-right"></i></a>
-
+                                            <li><a class="linkedin-footer" href="https://www.linkedin.com/company/morman-design"><i class="mdi mdi-linkedin"></i></a></li>
                                         </ul>
                                         <div>
-                                        © Morman Design, Tous droits reservés. <a href="confidentialite.html" title="Confidentialité" rel="nofollow">Confidentialité</a> | <a href="" title="Conditions d'utilisation" rel="nofollow">Conditions d'utilisation</a> | <a href="https://www.cnil.fr/fr/loi-78-17-du-6-janvier-1978-modifiee" target="_blank" title="La loi Informatique et Libertés" rel="nofollow">La loi Informatique et Libertés</a>
+                                        © 2016 Morman Design, Tous droits reservés. <a href="confidentialite.html" title="Confidentialité" rel="nofollow">Confidentialité</a> | <a href="docs/cgvu.pdf" title="Conditions d'utilisation" rel="nofollow">Conditions d'utilisation</a> | <a href="https://www.cnil.fr/fr/loi-78-17-du-6-janvier-1978-modifiee" target="_blank" title="La loi Informatique et Libertés" rel="nofollow">La loi Informatique et Libertés</a>
                                         </div>
                                     </div>
                                 </div>

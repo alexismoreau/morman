@@ -12,8 +12,8 @@ module.exports = function(grunt) {
     },
     cssmin: {
       target: {
-        src: ['css/keyframes.css'],
-        dest: 'css/keyframes.min.css'
+        src: ['css/style.css'],
+        dest: 'css/style.min.css'
       }
     }
   })
