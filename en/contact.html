@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>
+      Morman Design | Edition de logiciels web pour les salons de coiffure
+    </title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" /> <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152-precomposed.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="description" content="Morman Design développe des solutions web pour votre salon de coiffure, avec prise de RDV en ligne pour faciliter la vie de votre salon et de vos clients." />
+    <meta name="keywords" content="morman design editeur application solution sie salon coiffure paris france web coiffeur rdv rendez-vous rendez vous prendre en ligne" />
+    <meta property="og:site_name" content="Morman Design" /> 
+	<!-- <meta property="fb:admins" content="ID_FACEBOOK_DU_WEBMASTER" /> 
+	<meta property="fb:page_id" content="ID_PAGE_FACEBOOK" /> -->
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="img/apple-touch-icon-120x120-precomposed.png" /> 
+	<meta property="og:url" content="https://morman.fr" /> 
+	<meta property="og:title" content="MyHairManager" /> 
+	<meta property="og:description" content="Nous développons des solutions web pour votre salon de coiffure, avec prise de RDV en ligne pour faciliter la vie de votre salon et de vos clients." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>      
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/keyframes.min.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="m-scene" id="main"> <!-- Page Container -->
+
+      <!-- Modal -->
+      <div class="modal contacts-information" id="modal3">
+          <div class="modal-content">
+              <h4>
+                Contactez-Nous
+              </h4>
+              <form id="monForm" action="email.php" method="post">
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-account-circle prefix"></i> 
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-phone prefix"></i> 
+                        <label for="telephone">Téléphone</label>
+                        <input type="number" id="telephone" name="telephone" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-email prefix"></i> 
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" />
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-pencil prefix"></i> 
+                        <label for="message">Ecrivez votre message ici</label>
+                        <input type="text" id="message" name="message" />
+                    </div>
+                    <div class="modal-footer">
+                        <input class= "modal-action modal-close waves-effect waves-green btn-flat" type="submit" id="envoyer" value="Envoyer" />
+                        <a>En cliquant sur Envoyer, j'accepte les </a><a class="cgu-text" href="docs/cgvu.pdf">CGVU.</a>
+                    </div>
+              </form>
+          </div> <!-- End of Modal -->
+        </div>
+        
+      <!-- Sidebars -->
+    <div class="snap-drawers">
+        <!-- Left Sidebar -->
+        <div class="snap-drawer snap-drawer-left">
+          <div class="drawer-inner">
+            <ul>
+              <li><a href="index.html" alt="Acceuil" title="Index"><i class="mdi mdi-home"></i> <span>Accueil</span></a></li>
+              <li><a href="qui-sommes-nous.html" alt="Qui Sommes-Nous ?" title="Qui sommes-nous ?"><i class="mdi mdi-account"></i> <span>Qui Sommes-Nous ?</span></a></li>
+              <li class="have-child">
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="mdi mdi-hand-pointing-right"></i> Nos Prestations <i class="mdi mdi-menu-down right"></i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                          <div class="collapsible-header">
+                            <i class="mdi mdi-numeric-1-box-outline"></i><a href="myhairmanager.html" alt="MyHairManager" title="MyHairManager"> MyHairManager</a>
+                          </div>
+                          <div class="collapsible-header">
+                              <i class="mdi mdi-numeric-2-box-outline"></i><a href="site-vitrine.html" alt="Site Vitrine" title="Site Vitrine"> Site Vitrine</a>
+                          </div>
+                          <div class="collapsible-header">
+                              <i class="mdi mdi-numeric-3-box-outline"></i><a href="site-e-commerce.html" alt="Site e-commerce" title="Site e-commerce"> Plateforme E-Commerce</a>
+                          </div>
+                          <div class="collapsible-header">
+                              <i class="mdi mdi-numeric-4-box-outline"></i><a href="plateforme-prise-de-rdv.html" alt="Plateforme de Prise de RDV" title="Plateforme de Prise de RDV"> Plateforme de Prise de Rendez-vous</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="recapitulatif.html" alt="Recapitulatif des Tarifs"><i class="mdi mdi-credit-card"></i> <span>Récapitulatif des Tarifs</span></a></li>
+              <li><a href="docs/demande-de-prestations.pdf"><i class="mdi mdi-file-pdf"></i> <span>Demande de Prestation</span></a></li>
+              <li><a href="contact.html" alt="Nous Contacter"><i class="mdi mdi-email" title="Nous Contacter"></i> <span>Nous Contacter</span></a></li>
+            </ul>
+
+            </div>
+        </div> <!-- End of Left Sidebar -->
+
+    </div> <!-- End of Sidebars -->
+      
+        <!-- Toolbar -->
+        <div id="toolbar">
+          <div class="open-left" id="open-left">
+            <i class="mdi mdi-sort-variant"></i>
+          </div>
+          <span class="title">Contact</span>
+        </div>
+        
+        <!-- Page Content -->
+      <div class="snap-content z-depth-5" id="content">
+        
+        <!-- Main Content -->
+        <div class="scene_element contacts scene_element--fadeinup" style="position:relative;">
+
+          <div class="contacts-button">
+            <a class="waves-effect waves-light btn-large modal-trigger primary-color" href="#modal3"><i class="mdi mdi-email left"></i>Contactez Nous</a>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10511.568595245732!2d2.364911!3d48.803037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d584c7aeb1b82!2sMorman+Design!5e0!3m2!1sfr!2sfr!4v1472066833588" style="position:absolute;top:0;border:none;"></iframe>
+
+        </div> <!-- End of Main Contents -->
+        <div id="blockui"></div>
+      </div> <!-- End of Page Content -->
+    </div> <!-- End of Page Container -->
+    <script src="js/built.js"></script>  
+    <script src="js/cookiechoices.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event){cookieChoices.showCookieConsentBar('Ce site utilise des cookies pour effectuer des statistiques de visite. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'J’accepte', 'En savoir plus', 'https://morman.fr/confidentialite.html');});
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','js/analytics.js','ga');
+
+          ga('create', 'UA-79154607-1', 'auto');
+          ga('send', 'pageview');    
+    </script>
+  </body>
+</html>
