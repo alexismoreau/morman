@@ -236,7 +236,7 @@
                     }
 
                     if( utils.canTransform() ){
-                        var theTranslate = 'translate3d(' + n + 'px, 0,0)';
+                        var theTranslate = 'translateX(' + n + 'px)';
                         settings.element.style[cache.vendor+'Transform'] = theTranslate;
                     } else {
                         settings.element.style.width = (win.innerWidth || doc.documentElement.clientWidth)+'px';

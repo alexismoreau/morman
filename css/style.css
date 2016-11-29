@@ -203,6 +203,50 @@ img {
   display: block;
   height: 12em;
 }
+
+.vitrine-image {
+  height: 337px;
+  width: auto;
+  margin: auto;
+}
+
+.mhm-image {
+  height: 305px;
+  width: auto;
+  margin: auto;
+}
+
+.rdv-image {
+  height: 491px;
+  width: auto;
+  margin: auto;
+}
+
+.ec-image {
+  height: 337px;
+  width: auto;
+  margin: auto;
+}
+.ec-image3 {
+  height: 225px;
+  width: auto;
+  margin: auto;
+}
+
+.index-image {
+  height: 581px;
+  width: auto;
+  margin: auto;
+}
+
+.vitrine-image-resp, .mhm-image-resp, .ec-image-resp {
+  display: none;
+}
+
+#mhm-texte {
+    overflow: visible;
+}
+
 .snap-content {
   position: relative;
   top: 56px;
@@ -507,15 +551,18 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   background: #303F9F;
 }
 #flag-fr {
-    height: 32px;
-    width: 32px;
+    height: 35px;
+    width: 35px;
     display: inline-block;
+    vertical-align: middle;
 }
 #flag-gb {
-    height: 32px;
-    width: 32px;
+    height: 35px;
+    width: 35px;
     display: inline-block;
+    vertical-align: middle;
 }
+
 .t-delay {
   -webkit-transition-delay: 2s;
   transition-delay: 2s;
@@ -536,8 +583,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   width: 56px;
   text-align: center;
   position: relative;
+}
+#gb {
   margin-right: 10px;
 }
+
+
 #toolbar i {
   font-size: 24px;
   line-height: 56px;
@@ -547,7 +598,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   font-size: 22px;
   color: white;
   line-height: 56px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 /*------------------------------------------------------------------
@@ -1120,7 +1171,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   width: 90px;
   height: auto;
   border-radius: initial;
-  opacity: 0.4;
+  opacity: 1;
 }
 .profile-user1 > p:nth-child(3), .profile-user2 > p:nth-child(3), .profile-user1 > p:nth-child(5), .profile-user2 > p:nth-child(5) {
   padding-left: 3em;
@@ -1364,14 +1415,78 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 #flags-footer {
         display: none !important;
 }
-@media only screen and (max-width: 395px) {
-    #open-right{
+@media only screen and (max-width: 506px) {
+    .open-right{
         display: none;
     }
     #flags-footer {
         display: flex !important;
     }
 }
+
+@media only screen and (max-width: 440px) {
+    .vitrine-image, .mhm-image {
+        display: none;
+    }
+    .vitrine-image-resp {
+        display: block;
+        height: 305px;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .mhm-image {
+        display: none;
+    }
+    .mhm-image-resp {
+        display: block;
+        height: 279px;
+        width: auto;
+        margin: auto;
+    }
+    #mhm-image2 {
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .rdv-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 522px) {
+    .ec-image {
+        display: none;
+    }
+    .ec-image-resp {
+        display: block;
+        height: 340px;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    .index-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #toolbar .title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+    .ec-image3 {
+        display: none;
+    }
+}
+
 
 #blockui{
     position: absolute;
@@ -1400,6 +1515,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 #cont {
     text-align: center;
     min-height: 30em;
+    padding: 0.8em;
 }
 
 .title-box {
@@ -1421,7 +1537,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 .services-box {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 a.services-icon {
@@ -2233,8 +2350,7 @@ ul.bxslider {
     vertical-align:top
 }
 #bas_page ul.last{
-    width:260px;
-    float:right
+    float: right;
 }
 #bas_page li{
     padding:14px 0px;
